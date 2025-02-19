@@ -69,12 +69,10 @@ nav ul a:hover {
 
 }
 
-/* .vd-logo {
-    margin-top: 100px;
-    background-color: aqua;
+.vd-logo{
+    margin-top: 80px;
     max-width: 900px;
-    height: 530px;
-} */
+}
 
 #home h1 {
     margin-top: 30px;
@@ -308,6 +306,10 @@ nav ul a:hover {
     }
 }
 
+.sorteio{
+    font-size: 40px;
+}
+
 .bar {
     width: 90%;
     height: 4px;
@@ -357,7 +359,7 @@ nav ul a:hover {
 }
 
 #inscricao h3 {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     text-align: center;
     display: flex;
@@ -464,7 +466,7 @@ nav ul a:hover {
 .logo-inova-ft,
 .logo-fazzio-ft {
     background-color: black;
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     border-radius: 10px;
     height: 440px;
@@ -476,7 +478,7 @@ nav ul a:hover {
 }
 
 .logo-inova-ft img {
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     max-height: 500px;
 }
@@ -490,7 +492,7 @@ nav ul a:hover {
 .map-container {
     background-color: black;
     width: 70%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 20px 0 0 0;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -512,6 +514,11 @@ footer {
     .map-container {
         background-color: black;
         width: 100%;
+    }
+
+    .vd-logo{
+        margin-top: 80px;
+        max-width: 500px;
     }
 
     .card-sort {
@@ -755,6 +762,11 @@ footer {
     }
 
     @media (max-width: 600px) {
+
+        .vd-logo{
+            margin-top: 80px;
+            max-width: 350px;
+        }
         .card-parc {
             & img {
                 max-width: 50px;
@@ -770,8 +782,12 @@ footer {
 
         & .card-1 {
 
-            max-width: 400px;
+            max-width: 300px;
         }
+    }
+
+    #localizacao h1{
+        font-size: 50px;
     }
 
 
@@ -779,6 +795,12 @@ footer {
         nav {
             flex-direction: column;
             padding: 10px;
+        }
+
+
+        .title-2-sort{
+            max-width: 90%;
+            
         }
 
         nav ul a {

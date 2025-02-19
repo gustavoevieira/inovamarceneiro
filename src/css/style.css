@@ -136,6 +136,10 @@ nav ul a:hover {
     margin-top: 70px;
 }
 
+.title-2-sort{
+    max-width: 100%;
+}
+
 #ofertas {
     background-color: red;
     display: flex;
@@ -554,7 +558,7 @@ footer {
         text-align: center;
         color: white;
         font-size: 40px;
-        margin: 0 200px;
+        margin: 10px 200px;
 
 
         & p {
@@ -789,8 +793,15 @@ footer {
         }
 
         .card {
-            width: 95%;
-            padding: 15px;
+            width: 400px;
+            margin: 0;
+        }
+
+        .cards{
+            & card {
+                width: 400px;
+                margin: 0;
+            }
         }
 
         #inscricao h2 {

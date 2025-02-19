@@ -384,6 +384,8 @@ nav ul a:hover {
         text-align: start;
         color: red;
 
+        
+
         & span {
             color: black;
         }
@@ -799,7 +801,7 @@ footer {
 
 
         .title-2-sort{
-            max-width: 90%;
+            max-width: 100%;
             
         }
 

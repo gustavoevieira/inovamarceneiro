@@ -20,12 +20,12 @@ html {
 
 nav {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 20px;
     background-color: black;
     position: fixed;
     width: 100vw;
-    z-index: 1000;
+    z-index: 500;
 }
 
 .menu-toggle {
@@ -510,6 +510,39 @@ nav ul a:hover {
 footer {
     color: white;
     text-align: center;
+}
+
+.containerwpp {
+    position: relative;
+    width: 300px; 
+    height: 200px; 
+}
+
+.wppcontainer {
+    position: fixed; 
+    bottom: 40px; 
+    right: 40px; 
+    z-index: 1000; 
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+.wpp {
+    width: 70px; 
+    height: 70px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 50%; 
+    transition: transform 0.3s; 
+    animation: float 1.5s ease-in-out infinite;
+}
+
+.wpp:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 1650px) {

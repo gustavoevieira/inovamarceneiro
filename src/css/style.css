@@ -52,8 +52,9 @@ nav ul a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     color: white;
-    margin-right: 10px;
     font-weight: 500;
+    justify-content: center;
+    margin: 0 20px;
 }
 
 nav ul a:hover {
@@ -384,7 +385,7 @@ nav ul a:hover {
         text-align: start;
         color: red;
 
-        
+
 
         & span {
             color: black;

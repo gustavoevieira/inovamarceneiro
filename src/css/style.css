@@ -552,8 +552,6 @@ nav ul a:hover {
     font-size: 60px;
     text-align: center;
     color: #fff;
-
-
 }
 
 .ft-banners {
@@ -575,7 +573,7 @@ nav ul a:hover {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .logo-inova-ft img {
@@ -615,7 +613,7 @@ footer {
     position: fixed; 
     bottom: 40px; 
     right: 40px; 
-    z-index: 1000; 
+    z-index: 501; 
 }
 
 

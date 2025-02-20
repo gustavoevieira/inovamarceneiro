@@ -12,8 +12,13 @@
 <body>
   <header>
     <a href="https://fazziomadeiras.com.br/" target="_blank">
-      <img src="src/imgs/fazzio-logo.png" alt="">
+      <img class="logo-nav" src="src/imgs/fazzio-logo.png" alt="">
     </a>
+    <div class="social">
+      <a href="https://www.instagram.com/fazziomadeira/#" target="_blank"><img src="src/imgs/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/fazzio.madeiras/" target="_blank"><img class="fb" src="src/imgs/facebook.png" alt=""></a>
+      <a href="mailto:contato@fazziomadeiras.com.br" target="_blank"><img src="src/imgs/e-mail.png" alt=""></a>
+    </div>
     <nav>
       <div class="menu-toggle" onclick="toggleMenu()">
         <div class="bar-menu"></div>
@@ -31,6 +36,14 @@
       </ul>
     </nav>
   </header>
+
+  <div id="modal" class="overlay">
+    <div class="popup">
+        <button class="close-btn" onclick="fecharPopup()">✖</button>
+        <img src="src/imgs/fazzio-logo.png" alt="Bem-vindo" style="width: 100%; border-radius: 5px;">
+        <p>Seja bem-vindo ao nosso evento!</p>
+    </div>
+</div>
 
   <main>
 

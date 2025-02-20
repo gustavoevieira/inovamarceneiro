@@ -10,10 +10,10 @@
 
 body {
     background-image: url(../imgs/bg-wood.jpg);
-    background-size: cover; /* Garante que a imagem cubra toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Mantém a imagem fixa enquanto o conteúdo rola */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 
@@ -89,7 +89,7 @@ nav ul a:hover {
     justify-content: center;
     margin-top: 100px;
     background-color: #000000;
-    width: 100vw;
+    width: 100%;
 }
 .vd-logo{
     margin-top: 80px;

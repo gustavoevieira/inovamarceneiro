@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inova Marceneiro</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="shortcut icon" href="src/imgs/inova-logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="https://fazziomadeiras.com.br/" target="_blank">
+      <img class="logo-nav" src="src/imgs/fazzio-logo.png" alt="">
+    </a>
+    <div class="social">
+      <a href="https://www.instagram.com/fazziomadeira/#" target="_blank"><img src="src/imgs/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/fazzio.madeiras/" target="_blank"><img class="fb" src="src/imgs/facebook.png" alt=""></a>
+      <a href="mailto:contato@fazziomadeiras.com.br" target="_blank"><img src="src/imgs/e-mail.png" alt=""></a>
+    </div>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar-menu"></div>
+        <div class="bar-menu"></div>
+        <div class="bar-menu"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#home" onclick="closeMenu()">HOME</a></li>
+        <li><a href="#sobre" onclick="closeMenu()">SOBRE</a></li>
+        <li><a href="#ofertas" onclick="closeMenu()">OFERTAS</a></li>
+        <li><a href="#programacao" onclick="closeMenu()">PROGRAMAÇÃO</a></li>
+        <li><a href="#inscricao" onclick="closeMenu()">INSCRIÇÃO</a></li>
+        <li><a href="#parc-loc" onclick="closeMenu()">PARCEIROS</a></li>
+        <li><a href="#localizacao" onclick="closeMenu()">LOCALIZAÇÃO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="modal" class="overlay">
+    <div class="popup">
+        <button class="close-btn" onclick="fecharPopup()">✖</button>
+        <img src="src/imgs/fazzio-logo.png" alt="Bem-vindo" style="width: 100%; border-radius: 5px;">
+        <p></p>
+    </div>
+</div>
+  <main>
+    <section id="home">
+      <div class="bg-video" class="shadow">
+        <video class="vd-logo" autoplay muted loop>
+          <source src="src/imgs/inova-vid.mp4" type="video/mp4">
+          <source src="src/imgs/inova-vid.webm" type="video/webm">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+      <h1>28 E 29 DE MARÇO DE 2025</h1>
+    </section>
+    <div class="shadow">
+      <section id="sobre" >
+        <h1>SOBRE</h1>
+        <p>Nos dias 28 e 29 de março de 2025, o Inova Marceneiro chega para revolucionar a maneira como marceneiros,
+          montadores de móveis, arquitetos e designers de interiores se conectam com conhecimento, tendências e inovação.
+          Realizado na Fazzio Madeiras, este evento pioneiro é muito mais do que uma exposição de máquinas e ferramentas,
+          é um espaço de capacitação técnica e troca de experiências voltado para quem busca excelência e transformação no
+          mercado.</p>
+        </section>
+        <section id="sobre2">
+          <h1>UM NOVO CONCEITO DE EVENTO</h1>
+      <p>
+        O Inova Marceneiro foi criado com um propósito claro: oferecer uma plataforma prática e interativa para a
+        qualificação de profissionais do setor. Em vez de focar apenas na exposição de produtos, o evento apresenta um
+        formato dinâmico, no qual cada fornecedor realiza palestras e treinamentos técnicos, abordando temas relevantes
+        e mostrando na prática como suas soluções podem fazer a diferença em projetos de diferentes níveis. Além disso,
+        o evento enfatiza a importância de comparar soluções simples e sofisticadas, oferecendo ferramentas para os
+        profissionais tomarem decisões mais estratégicas em suas rotinas.
+      </p>
+    </section>
+  </div>
+    <!-- <section id="ofertas">
+      <h1 class="title-g">OFERTAS</h1>
+      <div class="container-offers">
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container-offers">
+          <div class="card-offer">
+            <div class="front-content">
+              <p>Serra Circular</p>
+              <img src="src/imgs/serra-circular-makita.png" alt="" width="200px">
+                <p>R$ 699,90</p>
+            </div>
+            <div class="content">
+              <img src="src/imgs/makita-logo.png" alt="" class="heading" width="200px">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipii
+                voluptas ten mollitia pariatur odit, ab
+                minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                necessitatibus dignissimos molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section> -->
+    <section id="programacao">
+      <h1 class="title-g">PROGRAMAÇÃO</h1>
+      <div class="cards" class="shadow-card">
+        <div class="card">
+          <h1>28 DE MARÇO/25</h1>
+          <h3>SEXTA-FEIRA</h3>
+          <div class="bar">
+          </div>
+          <div class="hour">
+            <h3>10:00HS <span>- INICIO DAS EXPOSIÇÕES "MAQUINAS E FERRAMENTAS"</span></h3>
+            <h3>14:00HS <span>- FGVTN - "OCULTANTO AS FERRAGENS"</span></h3>
+            <h3>15:00HS <span>- LED LINE - "ILUMINANDO OS ORIJETOS"</span></h3>
+            <h3>16:00HS <span>- MAKITA - "MARCENARIA SEM FIO"</span></h3>
+            <h3>17:00HS <span>- HAPPY HOUR</span></h3>
+            <h3>18:00HS <span>- ENCERRAMENTO</span></h3>
+          </div>
+        </div>
+        <div class="card">
+          <h1>29 DE MARÇO/25</h1>
+          <h3>SÁBADO</h3>
+          <div class="bar">
+          </div>
+          <div class="hour">
+            <h3>08:00HS <span>- INICIO DAS EXPOSIÇÕES "MAQUINAS E FERRAMENTAS"</span></h3>
+            <h3>09:00HS <span>- GUARARAPES - "LANÇAMENTOS REVESTIR 2025"</span></h3>
+            <h3>10:00HS <span>- FAZZIO - "CORTANDO, COLANDO E FURANDO CONOSCO"</span></h3>
+            <h3>11:00HS <span>- HAPPY HOUR</span></h3>
+            <h3>12:00HS <span>- ENCERRAMENTO</span></h3>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 20px;">*Sujeito a Alteração</p>
+    </section>
+    <section id="inscricao" class="shadow">
+      <h1 class="title-g">INSCRIÇÃO</h1>
+      <a href="https://form.jotform.com/250273762079057" target="_blank">
+        <h2>
+          CLIQUE AQUI
+        </h2>
+      </a>
+      <div>
+        <div class="sorteio">
+          <h3 class="title-2-sort">SORTEIO PARA OS PARTICIPANTES DAS PALESTRAS</h3>
+        </div>
+        <div class="card-sort">
+          <div>
+            <div class="card-1">
+              <h4>28/03 - SEXTA-FEIRA</h4>
+              <h5>14:00HS <span>- FGVTN - MOCHILAS, CAIXA DE SOM E PRODUTOS FGVTN</span></h5>
+              <h5>14:00HS <span>- LED LINE - FITAS DE LEDS E ACESSÓRIOS</span></h5>
+              <h5>14:00HS <span>- MAKITA - BATERIAS, MÁQUINAS E ACESSÓRIOS</span></h5>
+            </div>
+          </div>
+          <div class="card-1-1" style="color: white;">
+            <div class="card-1">
+              <h4>29/03 - SÁBADO</h4>
+              <h5>09:00HS <span>- GUARARAPES - VIAGENS PARA CASA COR E CASA GARARAPES SP</span></h5>
+              <h5>10:00HS <span>- FAZZIO VOUCHERS DE R$ 500,00 PARA USINAGEM</span></h5>
+              <h5>12:00HS <span>- COLLER TÉRMICO CW003Z* MAKITA</span></h5>
+            </div>
+            * Cooler da Makita será sorteado, um cupom a cada R$500,00 faturado em MAKITA vendido durate a feira.
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="parc-loc"></div>
+    <section id="parceiros">
+      <h1 class="title-g">PARCEIROS</h1>
+      <div class="parc-container">
+        <div class="card-parc shadow" onclick="window.open('https://fazziomadeiras.com.br/', '_blank')"
+          style="cursor: pointer;"><img src="src/imgs/fazzio-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://pronegocios.com.br/', '_blank')" style="cursor: pointer;">
+          <img src="src/imgs/rede-pro-logo.png" alt="">
+        </div>
+        <div class="card-parc shadow" onclick="window.open('https://baldan.ind.br/', '_blank')" style="cursor: pointer;"><img
+            src="src/imgs/baldan-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://www.tekbond.com.br/produtos', '_blank')"
+          style="cursor: pointer;"><img src="src/imgs/tek-bond-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://ledline.net.br/index.html#/', '_blank')"
+          style="cursor: pointer;"><img src="src/imgs/led-line.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://www.fgvtn.com.br/', '_blank')" style="cursor: pointer;">
+          <img src="src/imgs/fgv-logo.png" alt="">
+        </div>
+      </div>
+      <div id="parc-2" class="parc-container">
+        <div class="card-parc shadow" onclick="window.open('https://www.makita.com.br/', '_blank')" style="cursor: pointer;">
+          <img src="src/imgs/makita-logo.png" alt="">
+        </div>
+        <div class="card-parc shadow" onclick="window.open('https://www.guararapes.com.br/', '_blank')"
+          style="cursor: pointer;"><img src="src/imgs/guararapes-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://www.sayerlack.com.br/', '_blank')"
+          style="cursor: pointer;"><img src="src/imgs/sayerlack-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://inmes.com.br/', '_blank')" style="cursor: pointer;"><img
+            src="src/imgs/inmes-logo.png" alt=""></div>
+        <div class="card-parc shadow" onclick="window.open('https://www.rehau.com/br-pt', '_blank')" style="cursor: pointer;">
+          <img src="src/imgs/rehau-logo.png" alt="">
+        </div>
+        <div class="card-parc shadow" onclick="window.open('https://fazzio.corte.cloud/#/login', '_blank')"
+          style="cursor: pointer;"><p>Conheça nossos serviços</p></div>
+      </div>
+    </section>
+    <section id="localizacao" class="shadow">
+      <h1 class="title-g">LOCALIZAÇÃO</h1>
+      <div class="ft-banners">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4548.482020213294!2d-48.31637652382885!3d-22.105220609718238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b89bd3f8cfa53b%3A0x7e3ed82914fe2162!2sFazzio%20Madeiras!5e1!3m2!1spt-BR!2sbr!4v1739971463016!5m2!1spt-BR!2sbr"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="logo-inova-ft">
+          <img src="src/imgs/inova-logo.png" alt="">
+        </div>
+        <div class="logo-fazzio-ft">
+          <img src="src/imgs/fazzio-logo.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="wppcontainer">
+    <a href="http://wa.me/5516997673096" target="_blank">
+        <img class="wpp" src="src/imgs/whatsapp.png" alt="Link Whatsapp">
+    </a>
+</div>
+  <footer>
+    <h2>FAZZIO MADEIRAS - RUA SAVÉRIA D’ANGELO FAZZIO, 1752 | JARDIM PAULISTA | DOURADO-SP | (16) 3345-9100 |
+      CONTATO@FAZZIOMADEIRAS.COM.BR</h1>
+      <p> &#169 2025 FAZZIO MADEIRAS COMERCIAL LTDA - Todos os direitos reservados </p>
+  </footer>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>

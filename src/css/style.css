@@ -670,7 +670,7 @@ footer {
 .wpp {
     width: 70px; 
     height: 70px; 
-    box-shadow: 0 4px 8px linear-gradient(rgba 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 50%; 
     transition: transform 0.2s; 
     animation: float 1.5s ease-in-out infinite;

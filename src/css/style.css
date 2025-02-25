@@ -1031,6 +1031,15 @@ footer {
 
 
     @media (max-width: 480px) {
+
+        body {
+            background-image: url(../imgs/bg-wood-1.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
         nav {
             flex-direction: column;
             padding: 10px;
@@ -1054,8 +1063,7 @@ footer {
         }
 
         .card {
-            width: 400px;
-            margin: 0;
+            width: 350px;
         }
 
         .cards {

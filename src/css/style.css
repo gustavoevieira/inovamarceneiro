@@ -8,10 +8,6 @@
     font-weight: 300;
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 
 /* Pop-up */
 
@@ -56,13 +52,25 @@ html, body {
 
 /* Pop-up */
 
-
-body {
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(../imgs/bg-wood-1.png);
-    background-attachment: fixed;
-    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Fica no fundo */
 }
 
+
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-size: contain;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -1086,6 +1094,10 @@ footer {
         nav {
             flex-direction: column;
             padding: 10px;
+        }
+
+        body {
+            background-attachment: scroll;
         }
 
 

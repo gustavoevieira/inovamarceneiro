@@ -8,6 +8,10 @@
     font-weight: 300;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 
 /* Pop-up */
 
@@ -55,10 +59,8 @@
 
 body {
     background-image: url(../imgs/bg-wood-1.png);
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 
@@ -1123,6 +1125,7 @@ footer {
         #sobre p,
         #sobre2 p {
             font-size: 20px;
+            text-align: justify;
         }
 
 

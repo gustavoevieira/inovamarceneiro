@@ -92,7 +92,7 @@ header {
         position: fixed;
         z-index: 1000;
         width: 100px;
-        right: 60px;
+        right: 20px;
         top: 15px;
 
         & img {

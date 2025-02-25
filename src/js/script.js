@@ -11,7 +11,7 @@ function fecharPopup() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("background-video");
+  const video = document.getElementsByClassName("bg-video");
 
   video.play();
 

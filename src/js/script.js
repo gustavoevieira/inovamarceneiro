@@ -9,3 +9,18 @@ function closeMenu() {
 function fecharPopup() {
   document.getElementById("modal").classList.add("hidden");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("background-video");
+
+  video.play();
+
+  video.addEventListener("pause", () => {
+    video.play();
+  });
+
+  video.addEventListener("ended", () => {
+    video.currentTime = 0;
+    video.play();
+  });
+});

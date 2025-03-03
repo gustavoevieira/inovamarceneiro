@@ -62,12 +62,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Fica no fundo */
+    z-index: -1;
 }
 
 
 @supports (-webkit-touch-callout: none) {
-    body {
+    .background {
         background-size: contain;
     }
 }
@@ -512,10 +512,11 @@ video {
     }
 }
 
-.txt-prog{
+.txt-prog {
     display: flex;
     justify-content: center;
 }
+
 .bar {
     width: 90%;
     height: 4px;
@@ -1068,7 +1069,7 @@ footer {
         margin-left: 2.5px;
     }
 
-    
+
     .card {
         width: 420px;
         height: auto;

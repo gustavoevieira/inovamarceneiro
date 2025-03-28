@@ -65,7 +65,7 @@
     z-index: -1;
 } */
 
-.background {
+.body {
     background-image: url(../imgs/bg-wood-1.png);
     background-size: cover;
     background-position: center;

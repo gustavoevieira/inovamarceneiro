@@ -52,7 +52,7 @@
 
 /* Pop-up */
 
-.background {
+/* .background {
     position: fixed;
     top: 0;
     left: 0;
@@ -63,6 +63,14 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+} */
+
+.background {
+       background-image: url(../imgs/bg-wood-1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 
